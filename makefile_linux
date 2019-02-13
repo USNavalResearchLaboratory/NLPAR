@@ -1,0 +1,34 @@
+
+#CSOURCES = djr_npar.c # cNLPAR.c 
+CPPSOURCES = cNLPARv5.cpp
+					 
+OBJECTS= $(CSOURCES:.c=.o) $(CPPSOURCES:.cpp=.o)
+EXECUTABLE = patternProcessingC_Linux64.so
+
+#  use these options if you trust the code
+#CFLAGS= -O3 -c -m64
+CFLAGS= -O3 -c -fPIC -m64
+CPPFLAGS= -O3 -m64 -c -fPIC -std=c++11 -ffast-math -ftree-vectorize -march=native
+OPENMP = -fopenmp
+#  use the options in the next line if you need to check code
+#FLAGS= FLAGS= -c -m64
+#LFLAGS=  -m64 -O3 --shared 
+LFLAGS=  -O3 -shared -fPIC -m64
+#FTNCOMP = gfortran
+#CCOMP=llvm-gcc 
+CCOMP = gcc
+CPPCOMP = g++
+
+all: $(SOURCES) $(CPPSOURCES) $(EXECUTABLE)
+
+$(EXECUTABLE): $(OBJECTS)
+	$(CPPCOMP) $(LFLAGS) $(OPENMP) $(OBJECTS) -o $@
+
+.c.o:
+	$(CCOMP) $(CFLAGS) $(OPENMP) $< -o $@
+
+.cpp.o:
+	$(CPPCOMP) $(CPPFLAGS) $(OPENMP) $< -o $@	
+	
+clean:
+	rm -f $(OBJECTS)
