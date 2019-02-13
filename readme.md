@@ -1,4 +1,6 @@
-# NLPAR install and execution
+# NLPAR
+NLPAR (Non-Local Pattern Averaging and Reindexing) is a method for enhancing noisy EBSD patterns for increased indexing success. This repository does not include an indexing method, only the pattern enhancement method.  The advantage of NLPAR over other methods is that that a large number of patterns can be averaged together without significnatly degrading the original signal.  
+
 ## Installation
 
 ### MacOS:
