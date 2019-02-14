@@ -109,7 +109,7 @@ From the IDL prompt get an estimate of lambda:
 
     ****************
     Guess at lambda
-    Low:      0.681824  High:       1.28091  Mean:      0.950226 
+    Low:      0.645804  High:       1.17495  Mean:      0.885553
 
 Then use this in a call to NLPAR:
 
