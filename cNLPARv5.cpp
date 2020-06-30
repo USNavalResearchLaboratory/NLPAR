@@ -2,7 +2,7 @@
  This software was developed by employees of the US Naval Research Laboratory
 (NRL), an agency of the Federal Government. Pursuant to title 17 section 105 of
 the United States Code, works of NRL employees are not not subject to copyright
-protection, and this software is in the public domain. FiPy is an experimental
+protection, and this software is in the public domain. NLPAR is an experimental
 system. NRL assumes no responsibility whatsoever for its use by other parties,
 and makes no guarantees, expressed or implied, about its quality, reliability,
 or any other characteristic. We would appreciate acknowledgment if the software

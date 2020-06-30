@@ -157,8 +157,8 @@ PRO Nlparv5, patfile, outfile, lambda = lambda, dthresh = dthresh,searchWindow =
   blocksize += searchWindow[1]*2 ;number of rows to analyze at a time.
   blocksize <= image_dim[1]
 
-  blockSizeByte = blockSize*image_dim[0]*pat_dim[0]*pat_dim[1]*(bitDepth/8)
-  PRINT, "Approximate RAM usage: " + STRTRIM( 8.5*blocksizeByte/1.e9, 2) + "GB"
+  blockSizeByte = float(blockSize)*image_dim[0]*pat_dim[0]*pat_dim[1]*(bitDepth/8)
+  PRINT, "Approximate RAM usage: " + STRTRIM( (8.5*blocksizeByte)/1.e9, 2) + "GB"
 
   IF ((8.5*blockSizeByte) GT 15e9) AND (~KEYWORD_SET(RAMwarningOff)) THEN BEGIN
     PRINT, "You are about to process a block of data that is going to be over 16GB in size."
