@@ -1,5 +1,8 @@
 # NLPAR
-NLPAR (Non-Local Pattern Averaging and Reindexing) is a method for enhancing noisy EBSD patterns for increased indexing success. This repository does not include an indexing method, only the pattern enhancement method.  The advantage of NLPAR over other methods is that that a large number of patterns can be averaged together without significnatly degrading the original signal.  
+NLPAR (Non-Local Pattern Averaging and Reindexing) is a method for enhancing noisy EBSD patterns for increased indexing success. This repository does not include an indexing method, only the pattern enhancement method.  The advantage of NLPAR over other methods is that that a large number of patterns can be averaged together without significantly degrading the original signal.  
+
+Further details can be found in P. T. Brewick, S. I. Wright, and D. J. Rowenhorst. NLPAR: Non-local smoothing for enhanced EBSD pattern indexing. Ultramicroscopy, 200:50–61, May 2019.
+
 
 ## Installation 
 
