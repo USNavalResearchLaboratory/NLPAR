@@ -3,6 +3,14 @@ NLPAR (Non-Local Pattern Averaging and Reindexing) is a method for enhancing noi
 
 Further details can be found in P. T. Brewick, S. I. Wright, and D. J. Rowenhorst. NLPAR: Non-local smoothing for enhanced EBSD pattern indexing. Ultramicroscopy, 200:50–61, May 2019.
 
+****************************
+This repo is left here for historical reasons, but it is highly recommended that most people should use the Python-based version of NLPAR that is contained within PyEBSDIndex 
+https://github.com/USNavalResearchLaboratory/PyEBSDIndex
+****************************
+ 
+
+
+
 
 ## Installation 
 
